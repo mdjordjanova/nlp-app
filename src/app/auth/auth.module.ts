@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { authRoutes } from './auth.routing';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LoginComponent,
+    RegisterComponent
+  ],
   exports: [],
   imports: [
     RouterModule.forChild(authRoutes)
